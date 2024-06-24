@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    max-width: 100vw;
+}
+
+.wrapper>div {
+    max-width: 1400px;
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 0px #b3b3b357;
+}
+
+.nav>div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+nav .left {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav .center {
+    display: flex;
+    gap: 3%;
+    flex: 1;
+    justify-content: center;
+}
+
+nav .center>a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav .right,
+.heroSection .right button,
+.about2 button,
+.specializes2 button,
+.services button {
+    background-color: #ed6744;
+    /* background-color: rgb(255, 67, 98); */
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+
+.heroSection {
+    background-color: rgb(253 255 244);
+}
+
+.about,
+.about2,
+.specializes2,
+.testimonial {
+    background-color: rgb(9, 9, 41);
+    color: white;
+}
+
+.heroSection>div {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 5%;
+}
+
+.heroSection .right {
+    max-width: 450px;
+    width: 100%;
+    min-width: 400px;
+
+}
+
+.heroSection .right>form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.heroSection .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.heroSection .inputBox>label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.heroSection .inputBox>input {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: .8rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(194, 194, 194, 0.377);
+}
+
+.heroSection .right button {
+    background-color: #ed6744;
+}
+
+.heroSection .topText,
+.specializes .topText,
+.chooseUs .topText,
+.faq .topText {
+    border-left: 1px solid red;
+    padding: 5px 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.heroSection h2,
+.specializes h2,
+.about h2,
+h2 {
+    font-size: 2.5rem;
+    margin: 10px 0px 20px 0px;
+}
+
+.heroSection .subText {
+    font-size: 1rem;
+    color: rgb(77, 76, 76);
+    width: 80%;
+}
+
+.heroRating {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.heroRating .left {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.rating * {
+    color: rgb(255, 187, 0);
+}
+
+.heroRating .right,
+.testimonialUser {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.company {
+    height: 80px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.company img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    mix-blend-mode: darken;
+    filter: grayscale(1);
+}
+
+.about>div {
+    padding: 60px 0px;
+    display: flex;
+    gap: 5%;
+}
+
+.about .left,
+.chooseUs .left,
+.about .right {
+    min-width: 48%;
+}
+
+.about .left,
+.chooseUs .left {
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.about .left img,
+.chooseUs .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+
+.progeressBar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.progeressBar>label {
+    font-size: 1.1rem;
+    margin-left: 4px;
+}
+
+.fullBar {
+    width: 100%;
+    background-color: white;
+    height: 10px;
+
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fullBar::after {
+    content: "";
+    background-color: chocolate;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    animation-timeline: view();
+    animation: load linear 1s;
+    animation-range: entry 0 cover 50%;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.about2>div,
+.specializes>div,
+.specializes2>div {
+    display: flex;
+    gap: 40px;
+    width: 95%;
+    padding-top: 20px;
+}
+
+.about2 .left {
+    flex: 5;
+}
+
+.about2 .right {
+    flex: 7;
+}
+
+.about2 h3,
+.specializes h3,
+.specializes2 h3 {
+    font-size: 2rem;
+}
+
+.about2 p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+
+.about2 .right p {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.specializes .right {
+    width: 400px;
+    aspect-ratio: 1;
+}
+
+.specializes .left {
+    flex: 1;
+}
+
+.specializes .right iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.specializes h4 {
+    font-size: 1.3rem;
+}
+
+.specializes p {
+    margin-top: 5px;
+}
+
+.specializes2 h3 {
+    text-align: center;
+}
+
+.services h2 {
+    text-align: center;
+}
+
+.card {
+    max-width: 30%;
+    overflow: hidden;
+    padding: 30px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.card .hp {
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.chooseUs .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.chooseUs .right>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.chooseUs .right>div>div {
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: min-content;
+    text-wrap: nowrap;
+    padding: 10px 30px;
+}
+
+.testimonial .topText {
+    font-weight: 600;
+}
+
+.testimonial h2,
+.faq h2 {
+    max-width: 800px;
+}
+
+.testimonialCards {
+    width: 40%;
+
+}
+
+.testimonialUser {
+    margin-top: 20px;
+}
