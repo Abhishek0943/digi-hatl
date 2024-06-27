@@ -244,6 +244,66 @@ h2 {
     overflow: hidden;
 }
 
+.container2 {
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 0px;
+    width: 92%;
+}
+
+.sectionTwo {
+    display: flex;
+    position: relative;
+    top: -150px;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 1px;
+    padding: 0px !important;
+    background-color: #b7b6b6;
+}
+
+.sectionTwo>div {
+    background-color: aliceblue;
+    min-height: 300px;
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+.iconWarper {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(9, 9, 41);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWarper * {
+    color: white !important;
+}
+
+.iconWarper ion-icon {
+    /* color: white !important;  */
+    font-size: 2rem;
+}
+
+.skillHeadding {
+    color: black;
+    font-size: 1.2rem;
+    padding-bottom: 10px
+}
+
+.skillList {
+
+    color: black;
+    font-size: 1rem;
+}
+
 .fullBar::after {
     content: "";
     background-color: chocolate;
@@ -294,7 +354,8 @@ h2 {
 
 .about2 h3,
 .specializes h3,
-.specializes2 h3 {
+.specializes2 h3,
+.container2 h5 {
     font-size: 2rem;
 }
 
@@ -394,8 +455,8 @@ h2 {
 
 .testimonialCards {
     width: 40%;
-min-width: 330px;
-flex: 1;
+    min-width: 330px;
+    flex: 1;
 }
 
 .testimonialUser {
@@ -444,6 +505,9 @@ flex: 1;
         font-size: 14px;
     }
 
+    .sectionTwo {
+        flex-direction: column;
+    }
     .about2>div {
         flex-direction: column;
     }

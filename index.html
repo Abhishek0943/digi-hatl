@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -134,8 +138,8 @@
             <div class="left">Digi Hatl</div>
             <div class="center">
                 <a href="#Services">Services</a>
-                <a href="#">Blogs</a>
-                <a href="#">Pricing</a>
+                <a href="#Blog">Blogs</a>
+                <a href="#Pricing">Pricing</a>
                 <a href="#About">About Us</a>
                 <a href="#Contact">Contact Us</a>
             </div>
@@ -319,7 +323,84 @@
             </div>
         </div>
     </section>
-    <section class="wrapper specializes" style="padding: 50px 0px;">
+    <div id="Pricing" style="border-top: 1px solid gray !important">
+        <div style="background-color: rgb(9, 9, 41);color: white; ">
+            <div class="container2" data-aos="fade-right">
+                <h2 class="">Pricing Lorem ipsum dolor sit.</h2>
+                <p class="text" style="text-align: left;margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis odio cumque laudantium laborum expedita, saepe rem ea, commodi facilis molestiae aperiam! Recusandae suscipit modi, quidem ratione vitae dolor ullam voluptatum cupiditate, quod totam tempora minima illum perferendis, officiis rerum amet.</p>
+                <p class="text" style="text-align: left;margin-top: 20px;margin: 40px 0px 110px 0px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum consequuntur perspiciatis officia, nemo odio.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2 sectionTwo">
+        <div>
+            <div class="iconWarper">
+                <ion-icon name="layers"></ion-icon>
+            </div>
+            <h5 style="font-size: 1.3rem;">Frontend</h5>
+            <p class="text" style="color: #080d19;text-align: center; margin-top: 10px;font-size: 1rem;">Your
+                website is Online Identity Of your Business. We will make it beautiful and interactive By using
+                Given Tools</p>
+            <div style="display: flex;flex-direction: column;gap: 10px;margin-top: 30px;">
+                <h6 class="skillHeadding">Design Tools</h6>
+                <p class="skillList">HTML, CSS, JS</p>
+                <p class="skillList">Bootstrap</p>
+                <p class="skillList">Tailwind CSS</p>
+                <p class="skillList">React Js/React Native</p>
+                <p class="skillList">Next Js</p>
+                <p class="skillList">Axios</p>
+                <p class="skillList">Framer Motion</p>
+                <p class="skillList">Redux</p>
+                <p class="skillList">Vercel</p>
+                <p class="skillList">Git/Github</p>
+            </div>
+        </div>
+        <div>
+            <div class="iconWarper">
+                <ion-icon name="code-slash"></ion-icon>
+            </div>
+            <h5 style="font-size: 1.3rem;">Backend</h5>
+            <p class="text" style="color: #080d19;text-align: center; margin-top: 10px;font-size: 1rem;">Backend is
+                the sole of your website. The more scalable it is, the more your business will grow.</p>
+            <div style="display: flex;flex-direction: column;gap: 10px;margin-top: 30px;">
+                <h3 class="skillHeadding">Dev Tools</h3>
+                <p class="skillList">Node js</p>
+                <p class="skillList">Express js</p>
+                <p class="skillList">MongoDB</p>
+                <p class="skillList">Django</p>
+                <p class="skillList">Passport</p>
+                <p class="skillList">Bcrypt</p>
+                <p class="skillList">Restify</p>
+                <p class="skillList">Nest.js</p>
+                <p class="skillList">Api</p>
+                <p class="skillList">Terminal</p>
+            </div>
+        </div>
+        <div>
+            <div class="iconWarper">
+                <ion-icon name="terminal"></ion-icon>
+            </div>
+            <h5 style="font-size: 1.3rem;">Deployment</h5>
+            <p class="text" style="color: #080d19;text-align: center; margin-top: 10px;font-size: 1rem;">Deployment
+                transforms your website into the online face of your business. Leveraging the tools at our disposal.
+            </p>
+            <div style="display: flex;flex-direction: column;gap: 10px;margin-top: 30px;">
+                <h3 class="skillHeadding">Live Tools</h3>
+                <p class="skillList">Linux/Ubuntu</p>
+                <p class="skillList">Nginx</p>
+                <p class="skillList">Pm2</p>
+                <p class="skillList">Docker</p>
+                <p class="skillList">Kubernetes</p>
+                <p class="skillList">AWS Elastic Beanstalk</p>
+                <p class="skillList">AWS S3</p>
+                <p class="skillList">DigitalOcean App Platform</p>
+                <p class="skillList">Redis</p>
+                <p class="skillList">CI/CD Pipeline</p>
+            </div>
+        </div>
+
+    </div>
+    <section class="wrapper specializes" style="position: relative; top: -50px;">
         <div>
             <div class="left">
                 <div class="topText" data-aos="fade-right">Specialization</div>
@@ -342,7 +423,7 @@
                 </div>
             </div>
             <div class="right">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&loop=1&controls=0&mute=1"></iframe>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&loop=1&controls=0&mute=1"></iframe>
             </div>
         </div>
     </section>
@@ -410,6 +491,229 @@
                 </div>
 
     </section>
+
+
+
+
+
+
+
+
+
+    <section class="wrapper services" style="padding: 50px 0px;" id="Blog">
+        <div style=" flex-direction: column;align-items: center; width: 95%;">
+            <p style="text-align: center; font-weight: 600;" data-aos="fade-up">Blog</p>
+            <h2 data-aos="fade-up">
+                Get Updated By <br>
+               Digihalt blogs
+            </h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" >
+                            </div>
+                            <div class="cardDetails">
+
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <!-- <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" > -->
+                            </div>
+                            <div class="cardDetails">
+
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" >
+                            </div>
+                            <div class="cardDetails">
+
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" >
+                            </div>
+                            <div class="cardDetails">
+
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" >
+                            </div>
+                            <div class="cardDetails">
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="cardImage">
+                                <img src="https://rboa.com/wp-content/uploads/2018/08/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="" >
+                            </div>
+                            <div class="cardDetails">
+                                <h3>best it serviese avaliable here</h3>
+                                <div>10/2/2034</div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <style>
+        .swiper-pagination{
+            top: 20px !important;
+            position: relative;
+
+        }
+        .swiper {
+            width: 100%;
+            margin: auto;
+            height: auto;
+            padding-bottom:50px ;
+        }
+
+        .item {
+            background: #86868614;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            flex: 1;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 9px 0px #42424234;
+        }
+
+        .cardImage {
+            width: 100%;
+            aspect-ratio: 16/9;
+            /* object-fit: cover; */
+        }
+
+        .cardImage>img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        .cardDetails {
+            padding: 10px;
+            color: black;
+
+        }
+
+        .tagList {
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+        }
+
+        .tag {
+            background-color: white;
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 4px;
+
+        }
+
+        .cardDetails>h3 {
+            font-size: 1.3rem;
+            text-align: left;
+            text-transform: capitalize;
+            margin: 20px 0px 10px 0px;
+
+        }
+
+        .cardDetails>button {
+            background-color: red;
+            border: none;
+            outline: none;
+            padding: 4px 15px;
+            border-radius: 3px;
+            margin-top: 7px;
+            color: white;
+        }
+    </style>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            }, navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
+
+
     <section class="wrapper services" style="padding: 50px 0px;" id="Services">
         <div style=" flex-direction: column;align-items: center; width: 95%;">
             <p style="text-align: center; font-weight: 600;" data-aos="fade-up">Services</p>
