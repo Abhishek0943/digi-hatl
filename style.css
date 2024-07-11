@@ -54,19 +54,28 @@ nav .right,
 .heroSection .right button,
 .about2 button,
 .specializes2 button,
-.services button {
+.services button, .c1, .h3 {
     background-color: #ed6744;
     /* background-color: rgb(255, 67, 98); */
     outline: none;
     cursor: pointer;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px !important;
     color: white;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 1.1rem;
+    text-transform: uppercase !important;
+    font-size: 16px;
 }
+.ad{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cardDetails > button{
+    background-color: #ed6744 !important;
 
+}
 
 
 .heroSection {
@@ -313,7 +322,6 @@ h2 {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 90%;
     animation-timeline: view();
     animation: load linear 1s;
     animation-range: entry 0 cover 50%;
@@ -415,8 +423,33 @@ h2 {
     min-width: 320px;
     background-color: rgb(230, 230, 230);
     border-radius: 8px;
+    box-shadow: 10px 10px #ed6744;
+    transition: all .5s;
+    cursor: pointer;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: #ed6744;
+    min-width: 43px;
+    height: 40px;
+    border-radius: 50%;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.5rem !important;
+    color: #fffefd;
+    top: 0px;
+    bottom: 0px;
+    left: 0px ;
+    right: 0px;
+    margin: auto;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+}
+.card:hover{
+    box-shadow: -10px -10px rgb(9, 9, 41);
+
+}
 .card .hp {
     font-weight: 700;
     margin-top: 5px;
@@ -428,7 +461,21 @@ h2 {
     gap: 30px;
 
 }
-
+.accordion-item span{
+    font-weight: 600;
+}
+.chooseUs .right > div> div{
+    font-size: 24px !important;
+}
+.chooseUs .left {
+    background-color: black;
+    padding: 20px;
+}
+.left> .title {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
 .chooseUs .right>div {
     display: flex;
     flex-direction: column;
@@ -437,22 +484,23 @@ h2 {
 }
 
 .chooseUs .right>div>div {
-    background-color: black;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: white;
     width: min-content;
     text-wrap: nowrap;
-    padding: 10px 30px;
+    font-weight: 500;
 }
-
+label , option{
+    font-weight: 600 !important;
+}
 .testimonial .topText {
     font-weight: 600;
 }
-
-.testimonial h2,
-.faq h2 {
-    max-width: 800px;
+.b{
+    font-weight: 700 !important;
+font-size: 1.8rem !important;
+text-transform: uppercase;
+color: #ed6744;
 }
 
 .testimonialCards {
@@ -539,13 +587,26 @@ h2 {
     }
 
     .chooseUs .left {
-        max-height: 400px;
         width: 100%;
+        height: 760px !important;
         aspect-ratio: 16/9;
     }
 
 }
+.top{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ed6744;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
+
+}
 @media screen and (max-width:800px) {
     .sideBar {
         display: block;
